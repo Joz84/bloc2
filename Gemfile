@@ -17,6 +17,9 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'activeadmin'
+gem 'devise-i18n'
+gem 'country_select'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
