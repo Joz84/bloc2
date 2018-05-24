@@ -20,6 +20,7 @@ gem 'webpacker'
 gem 'activeadmin'
 gem 'devise-i18n'
 gem 'country_select'
+gem 'letter_opener_web'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
