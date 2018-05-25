@@ -21,6 +21,8 @@ gem 'activeadmin'
 gem 'devise-i18n'
 gem 'country_select'
 gem 'letter_opener_web'
+gem 'money-rails'
+gem 'stripe'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

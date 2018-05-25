@@ -15,3 +15,10 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+<% content_for(:after_js) do %>
+  <script>
+    console.log("coco")
+    initSubmission("<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>");
+  </script>
+<% end %>
