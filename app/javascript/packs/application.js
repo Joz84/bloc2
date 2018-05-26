@@ -45,7 +45,7 @@ function initSubmission(apiPk) {
   });
 
   // Handle form submission
-  var form = document.getElementById('payment-form');
+  var form = document.getElementById('new_user');
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -64,7 +64,7 @@ function initSubmission(apiPk) {
 
 function stripeTokenHandler(token) {
   // Insert the token ID into the form so it gets submitted to the server
-  var form = document.getElementById('payment-form');
+  var form = document.getElementById('new_user');
   var hiddenInput = document.createElement('input');
   hiddenInput.setAttribute('type', 'hidden');
   hiddenInput.setAttribute('name', 'stripeToken');
