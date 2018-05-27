@@ -21,6 +21,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.permit(:account_update, keys: user_data)
   end
 
+  def new
+    redirect_to root_path and return if Date.today >= Date.new(2018, 08, 01)
+    super
+  end
+
   def create
     build_resource(sign_up_params)
     resource.create_charge(params[:stripeToken]) if resource.valid?

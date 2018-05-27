@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 
   get "/participants", to: "pages#participants"
-  get "/contact", to: "pages#contact"
+  resources :contacts, only: [:new, :create]
 
 end
