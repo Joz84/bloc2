@@ -22,7 +22,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def new
-    redirect_to root_path and return if Date.today >= Date.new(2018, 08, 01)
+    redirect_to root_path and return if Date.today >= Date.new(2018, 8, 1)
     super
   end
 
