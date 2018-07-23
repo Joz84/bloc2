@@ -23,6 +23,8 @@ gem 'country_select'
 gem 'letter_opener_web'
 gem 'money-rails'
 gem 'stripe'
+gem 'cloudinary', require: false
+gem 'activestorage-cloudinary-service'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
